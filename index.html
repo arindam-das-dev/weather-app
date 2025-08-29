@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> India Weather App</h1>
+            <h2>Check weather in major Indian cities</h2>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="city-search" placeholder="Search for a city...">
+        </div>
+
+        <div class="main-content">
+            <div class="city-list">
+                <h3>Major Indian Cities</h3>
+                <ul class="cities">
+                    <li class="city-item active" data-city="Kolkata">
+                        <i class="fas fa-city"></i> Kolkata
+                    </li>
+                    <li class="city-item" data-city="Mumbai">
+                        <i class="fas fa-city"></i> Mumbai
+                    </li>
+                    <li class="city-item" data-city="Delhi">
+                        <i class="fas fa-city"></i> Delhi
+                    </li>
+                    <li class="city-item" data-city="Bengaluru">
+                        <i class="fas fa-city"></i> Bengaluru
+                    </li>
+                    <li class="city-item" data-city="Chennai">
+                        <i class="fas fa-city"></i> Chennai
+                    </li>
+                    <li class="city-item" data-city="Hyderabad">
+                        <i class="fas fa-city"></i> Hyderabad
+                    </li>
+                    <li class="city-item" data-city="Ahmedabad">
+                        <i class="fas fa-city"></i> Ahmedabad
+                    </li>
+                    <li class="city-item" data-city="Pune">
+                        <i class="fas fa-city"></i> Pune
+                    </li>
+                    <li class="city-item" data-city="Jaipur">
+                        <i class="fas fa-city"></i> Jaipur
+                    </li>
+                    <li class="city-item" data-city="Lucknow">
+                        <i class="fas fa-city"></i> Lucknow
+                    </li>
+                </ul>
+            </div>
+
+            <div class="weather-card">
+                <div class="current-weather">
+                    <h2 class="city-name">Kolkata</h2>
+                    <div class="date-time">Monday, June 5, 2023 | 03:45 PM</div>
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="current-temp">32°C</div>
+                    <div class="weather-desc">Sunny</div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <i class="fas fa-temperature-high"></i>
+                        <div class="detail-value">35°C</div>
+                        <div class="detail-label">Feels Like</div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-tint"></i>
+                        <div class="detail-value">65%</div>
+                        <div class="detail-label">Humidity</div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-wind"></i>
+                        <div class="detail-value">12 km/h</div>
+                        <div class="detail-label">Wind Speed</div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-compress-alt"></i>
+                        <div class="detail-value">1013 hPa</div>
+                        <div class="detail-label">Pressure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Weather data for demonstration purposes only</p>
+            <p>&copy; 2023 India Weather App</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
